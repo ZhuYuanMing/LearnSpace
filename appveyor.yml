@@ -4,9 +4,6 @@ environment:
   my_variable:
     secure: wgA/jfGsIEbiPkr3gC+EeqA2AGl/jzw4s2+nT9mUP1P+AU/6u7KfgMPKerc6bNqt
     
-build_script:
-    - hexo generate
-    
 artifacts:
     - path: public
     

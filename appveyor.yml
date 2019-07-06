@@ -3,6 +3,16 @@ clone_depth: 5
 environment:
   my_variable:
     secure: wgA/jfGsIEbiPkr3gC+EeqA2AGl/jzw4s2+nT9mUP1P+AU/6u7KfgMPKerc6bNqt
+ 
+install:
+    - ps: Install-Product node 6.9 # 默认node版本太老
+    - node --version
+    - npm --version
+    - npm install
+    - npm install hexo-cli -g
+    
+build_script:
+    - hexo generate
     
 artifacts:
     - path: public
@@ -20,3 +30,4 @@ on_success:
     - git add -A
     - git commit -m "Update Static Site"
     - git push origin %TARGET_BRANCH%
+

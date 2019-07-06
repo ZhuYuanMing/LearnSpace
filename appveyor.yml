@@ -2,7 +2,7 @@ clone_depth: 5
 
 environment:
     access_token:
-        secure: # 自己的加密token
+        secure: +Ku1e6X8MSIgomRbJYmcs1hpKtDLE9/fbdUmVHlX/0uoi3hXGouqHfjUNSDYcerT
 install:
     - ps: Install-Product node 6.9 # 默认node版本太老
     - node --version

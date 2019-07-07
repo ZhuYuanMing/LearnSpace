@@ -8,10 +8,10 @@ environment:
 #install:
 #  - set QTDIR=\home\zhuyuanming\Qt5.13.0\5.13.0\gcc_64
 #  - set PATH=%PATH%;%QTDIR%\bin;C:\MinGW\bin
-build_script:
+#build_script:
 #  - qmake QtTest.pro
-  gcc -o main.cpp test
-  ./test
+#  gcc -o a.cpp test
+#  ./test
 # install:
 #     - ps: Install-Product node 6.9 # 默认node版本太老
 #     - node --version

@@ -10,7 +10,7 @@ install:
 #  - set PATH=%PATH%;%QTDIR%\bin;C:\MinGW\bin
 build_script:
 #  - qmake QtTest.pro
-  - gcc-make
+  - make
 # install:
 #     - ps: Install-Product node 6.9 # 默认node版本太老
 #     - node --version

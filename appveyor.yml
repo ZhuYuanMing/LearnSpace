@@ -15,7 +15,7 @@ build_script:
     - hexo generate
     
 artifacts:
-    - path: public
+    - path: /home/zhuyuanming
     
 on_success:
     - git config --global credential.helper store

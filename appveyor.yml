@@ -11,7 +11,7 @@ environment:
 build_script:
 #  - qmake QtTest.pro
 #  gcc -o a.cpp test
-#  ./test
+  ./a
 # install:
 #     - ps: Install-Product node 6.9 # 默认node版本太老
 #     - node --version

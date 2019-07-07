@@ -1,6 +1,8 @@
 
 #clone_depth: 5
-
+image:
+ - Ubuntu
+  
 environment:
   my_variable:
     secure: wgA/jfGsIEbiPkr3gC+EeqA2AGl/jzw4s2+nT9mUP1P+AU/6u7KfgMPKerc6bNqt
@@ -10,7 +12,7 @@ environment:
 #  - set PATH=%PATH%;%QTDIR%\bin;C:\MinGW\bin
 build_script:
 #  - qmake QtTest.pro
-#  gcc -o a.cpp test
+  gcc -o a.cpp test
   ./a
 # install:
 #     - ps: Install-Product node 6.9 # 默认node版本太老

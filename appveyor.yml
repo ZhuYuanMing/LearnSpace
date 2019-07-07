@@ -1,12 +1,12 @@
 
-clone_depth: 5
+#clone_depth: 5
 
 environment:
   my_variable:
     secure: wgA/jfGsIEbiPkr3gC+EeqA2AGl/jzw4s2+nT9mUP1P+AU/6u7KfgMPKerc6bNqt
 
-install:
-  - set QTDIR=\home\zhuyuanming\Qt5.13.0\5.13.0\gcc_64
+#install:
+#  - set QTDIR=\home\zhuyuanming\Qt5.13.0\5.13.0\gcc_64
 #  - set PATH=%PATH%;%QTDIR%\bin;C:\MinGW\bin
 build_script:
 #  - qmake QtTest.pro

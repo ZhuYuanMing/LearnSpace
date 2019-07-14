@@ -3,6 +3,8 @@ project(MiniPreimere)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTOUIC ON)
+SET(CMAKE_AUTOrCC ON)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 
@@ -14,24 +16,23 @@ if(WIN32)
 endif(WIN32)
 
 if(UNIX)
-    include_directories(/home/root/opencv/include)
-    set(CMAKE_PREFIX_PATH /home/root/Qt5.13.0/5.13.0/gcc_64/lib/cmake /home/root/opencv)
+    set(CMAKE_PREFIX_PATH /home/zhuyuanming/Qt5.13.0/5.13.0/gcc_64/lib/cmake)
 endif(UNIX)
 
 # find and set Qt
 find_package(Qt5Gui REQUIRED)
 find_package(Qt5Multimedia REQUIRED)
-find_package(Qt5Core REQUIED)
-find_package(Qt5Widgets REQUIED)
+find_package(Qt5Core REQUIRED)
+find_package(Qt5Widgets REQUIRED)
 
 # find and set openCV
 find_package(OpenCV)
-set(OpenCV_LIBS opencv_core  opencv_highgui)
+set(OpenCV_LIBS opencv_core  opencv_highgui opencv_imgproc)
 # set ffmpeg
 
 set(ffmpeg_LIBS avcodec avformat avutil avdevice swscale)
 
-set(SOURCE_FILES View.cpp MainWindow.cpp MainWindow.h Notification/UpdateViewNotification.cpp Notification/UpdateViewNotification.h)
+set(SOURCE_FILES ./App/app.cpp ./App/main.cpp ./View/MainWindow.cpp ./View/Notification/UpdateViewNotification.cpp  ./ViewModel/commands/FetchQimageCommand.cpp ./ViewModel/commands/OpenFileCommand.cpp  ./ViewModel/ViewModel.cpp  ./model/Model.cpp  ./model/EditableVideo.cpp)
 #link
 
 add_executable(MiniPremiere ${SOURCE_FILES})

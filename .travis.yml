@@ -6,17 +6,17 @@ script:
   - gcc MiniPreimere.cpp -o MiniPreimere 
 
 before_deploy:
-  - git config --global user.name "ZhuYuanMing"
-  - git config --global user.email "317012994@zju.edu.cn"
-  - export GIT_TAG=1.0.3
+  - git config --global user.name "$USER_NAME"
+  - git config --global user.email "$USER_EMAIL" 
   - git tag $GIT_TAG -a -m "Generated tag from TravisCI build $GIT_TAG"
+
 
 deploy:
   provider: releases
-  api_key: XX6UaPV0mU2XB6mw02ayvg
+  api_key: $GIT_TOKEN 
   file:
     - MiniPreimere 
-  name: MiniPremiere-1.0.3
+  name: MiniPremiere-GIT_TAG
   skip-cleanup: true
   on:
     tags: true
@@ -24,4 +24,3 @@ deploy:
     branches:
       only:
         - master
-

@@ -16,7 +16,7 @@ if(WIN32)
 endif(WIN32)
 
 if(UNIX)
-    set(CMAKE_PREFIX_PATH /home/root/5.13.0/5.13.0/gcc_64/lib/cmake)
+    set(CMAKE_PREFIX_PATH /home/root/Qt/5.13.0/gcc_64/lib/cmake)
 endif(UNIX)
 
 # find and set Qt

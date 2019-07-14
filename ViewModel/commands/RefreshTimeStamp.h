@@ -5,7 +5,7 @@
 #ifndef REFRESHTIMESTAMP_H
 #define REFRESHTIMESTAMP_H
 
-#include "../../common/Command.h"
+#include "../../common/command.h"
 
 class ViewModel;
 class RefreshTimeStamp : public  CommandBase{

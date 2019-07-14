@@ -4,7 +4,8 @@
 #include "../model/Model.h"
 #include "../common/command.h"
 #include "../common/notification.h"
-#include <opencv2/opencv.hpp>
+#include <opencv2/imgproc.hpp>
+#include <opencv2/highgui/highgui_c.h>
 
 class ViewModel {
 private:

@@ -5,7 +5,7 @@
 #ifndef OPENFILECOMMAND_H
 #define OPENFILECOMMAND_H
 
-#include "../../common/Command.h"
+#include "../../common/command.h"
 
 
 class ViewModel;

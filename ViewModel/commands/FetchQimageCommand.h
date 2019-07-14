@@ -5,7 +5,7 @@
 #ifndef FETCHQIMAGECOMMAND_H
 #define FETCHQIMAGECOMMAND_H
 
-#include "../../common/Command.h"
+#include "../../common/command.h"
 
 class ViewModel;
 class FetchQimageCommand : public  CommandBase{

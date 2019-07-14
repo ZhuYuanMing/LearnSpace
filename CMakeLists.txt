@@ -16,7 +16,7 @@ if(WIN32)
 endif(WIN32)
 
 if(UNIX)
-    set(CMAKE_PREFIX_PATH /home/zhuyuanming/Qt5.13.0/5.13.0/gcc_64/lib/cmake)
+    set(CMAKE_PREFIX_PATH /home/root/5.13.0/5.13.0/gcc_64/lib/cmake)
 endif(UNIX)
 
 # find and set Qt
@@ -32,7 +32,8 @@ set(OpenCV_LIBS opencv_core  opencv_highgui opencv_imgproc)
 
 set(ffmpeg_LIBS avcodec avformat avutil avdevice swscale)
 
-set(SOURCE_FILES ./App/app.cpp ./App/main.cpp ./View/MainWindow.cpp ./View/Notification/UpdateViewNotification.cpp  ./ViewModel/commands/FetchQimageCommand.cpp ./ViewModel/commands/OpenFileCommand.cpp  ./ViewModel/ViewModel.cpp  ./model/Model.cpp  ./model/EditableVideo.cpp)
+
+set(SOURCE_FILES ./App/app.cpp ./App/main.cpp ./View/MainWindow.cpp ./View/Notification/UpdateViewNotification.cpp  ./View/Notification/UpdateTimeStampNotification.cpp ./View/MySlider.cpp ./ViewModel/commands/FetchQimageCommand.cpp ./ViewModel/commands/OpenFileCommand.cpp ./ViewModel/commands/RefreshTimeStamp.cpp ./ViewModel/ViewModel.cpp  ./model/Model.cpp  ./model/EditableVideo.cpp)
 #link
 
 add_executable(MiniPremiere ${SOURCE_FILES})

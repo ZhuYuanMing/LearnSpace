@@ -8,7 +8,7 @@ script:
 before_deploy:
   - git config --global user.name "ZhuYuanMing"
   - git config --global user.email "317012994@zju.edu.cn"
-  - export GIT_TAG=1.0.0
+  - export GIT_TAG=1.0.3
   - git tag $GIT_TAG -a -m "Generated tag from TravisCI build $GIT_TAG"
   - git push origin $GIT_TAG
 
@@ -17,7 +17,7 @@ deploy:
   api_key: XX6UaPV0mU2XB6mw02ayvg
   file:
     - MiniPreimere 
-  name: MiniPremiere-1.0.0
+  name: MiniPremiere-1.0.3
   skip-cleanup: true
   on:
     tags: true

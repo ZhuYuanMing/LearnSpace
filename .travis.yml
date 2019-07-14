@@ -49,7 +49,6 @@ before_deploy:
   - git config --global user.email "$USER_EMAIL"
   - git tag $GIT_TAG -a -m "Generated tag from TravisCI build $GIT_TAG"
 
-
 deploy:
   provider: releases
   api_key: $GIT_TOKEN
@@ -59,7 +58,7 @@ deploy:
   skip-cleanup: true
   on:
     tags: true
-    repo: eypidan/MiniPremiere
+    repo: ZhuYuanMing/LearnSpace
     branches:
       only:
         - master

@@ -10,7 +10,6 @@ before_deploy:
   - git config --global user.email "317012994@zju.edu.cn"
   - export GIT_TAG=1.0.3
   - git tag $GIT_TAG -a -m "Generated tag from TravisCI build $GIT_TAG"
-  - git push origin $GIT_TAG
 
 deploy:
   provider: releases

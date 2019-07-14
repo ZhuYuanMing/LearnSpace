@@ -11,6 +11,7 @@ before_install:
   - sudo apt-get install -y build-essential
   - sudo apt-get install -y cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev libqt5gui5 libqt5gui5 qt5-default qttools5-dev-tools libqt5concurrent5 libqt5widgets5
   - sudo apt-get install -y python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev
+  - sudo apt-get install libpostproc-dev libavfilter-dev libavdevice-dev
 
 install:
   - sudo apt-get install -qq g++-7
